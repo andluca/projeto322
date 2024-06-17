@@ -1,12 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import App from "./App.tsx";
+import { QueryClientProvider } from "react-query";
+import { queryClient } from "./providers/query-client.ts";
+import { router } from "./routes/index.ts";
+import { RouterProvider } from "react-router-dom";
 
-import "./main.css";
+import "./global.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
-		<App />
+		<QueryClientProvider client={queryClient}>
+			<RouterProvider router={router} />
+		</QueryClientProvider>
 	</React.StrictMode>
 );
