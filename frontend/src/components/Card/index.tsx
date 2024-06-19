@@ -1,29 +1,18 @@
-import { useNavigate } from "react-router-dom";
-
 import * as Styled from "./styles";
 
 interface Props {
 	item: Assessable;
+	onClick: () => void;
 }
 
-const Card: React.FC<Props> = ({ item }) => {
-	const navigate = useNavigate();
-
+const Card: React.FC<Props> = ({ item, onClick }) => {
 	return (
 		<Styled.Container>
 			<p>{item.name}</p>
 			<div>
 				<p>{item.synopsis}</p>
 			</div>
-			<button
-				onClick={() =>
-					navigate({
-						pathname: "/movie/:id".replace(":id", item.id),
-					})
-				}
-			>
-				Detalhes
-			</button>
+			<button onClick={onClick}>Detalhes</button>
 		</Styled.Container>
 	);
 };
