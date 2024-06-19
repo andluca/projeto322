@@ -29,6 +29,20 @@ subprojects {
 	apply(plugin = "idea")
 	apply(plugin = "org.springframework.boot")
 
+	configurations {
+		all {
+			val jar: Jar by tasks
+			val bootJar: BootJar by tasks
+
+			bootJar.enabled = false
+			jar.enabled = true
+
+			defaultTasks("clean", "build")
+			exclude(group = "commons-logging", module = "commons-logging")
+			exclude(group = "org.springframework.boot", module = "spring-boot-starter-logging")
+		}
+	}
+
 	dependencies {
 		implementation(kotlin("stdlib-jdk8"))
 		implementation(kotlin("reflect"))
