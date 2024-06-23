@@ -10,7 +10,7 @@ internal class MovieRepositoryAdapter(
     private val reader: MovieReader
 ): MovieRepositoryPort {
     companion object {
-        const val PATH = "adapters/src/main/resources/xml/movies.xml"
+        const val PATH = "xml/movies.xml"
     }
     override fun fetchMovies(): List<Movie> = runCatching {
         reader.read(PATH)

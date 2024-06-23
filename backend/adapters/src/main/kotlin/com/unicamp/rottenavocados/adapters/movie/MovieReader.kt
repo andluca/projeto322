@@ -3,6 +3,7 @@ package com.unicamp.rottenavocados.adapters.movie
 import com.unicamp.rottenavocados.configuration.xml.FileReader
 import com.unicamp.rottenavocados.core.model.genre.Genre
 import com.unicamp.rottenavocados.core.model.movie.Movie
+import org.springframework.core.io.ClassPathResource
 import org.springframework.stereotype.Service
 import org.w3c.dom.Element
 import org.w3c.dom.NodeList
@@ -17,10 +18,10 @@ class MovieReader(): FileReader {
         val movies = mutableListOf<Movie>()
 
         try {
-            val file = File(path)
+            val resource = ClassPathResource(path)
             val dbFactory = DocumentBuilderFactory.newInstance()
             val dBuilder = dbFactory.newDocumentBuilder()
-            val doc = dBuilder.parse(file)
+            val doc = dBuilder.parse(resource.inputStream)
             doc.documentElement.normalize()
 
             val nodeList: NodeList = doc.getElementsByTagName("Movie")
@@ -37,7 +38,7 @@ class MovieReader(): FileReader {
                     val rating = movieElement.getElementsByTagName("Rating").item(0).textContent.toFloatOrNull()
                     val totalRatings = movieElement.getElementsByTagName("TotalRatings").item(0).textContent.toInt()
                     val releaseDate = LocalDate.parse(movieElement.getElementsByTagName("ReleaseDate").item(0).textContent)
-                    val genre = Genre.valueOf(movieElement.getElementsByTagName("Genre").item(0).textContent.toUpperCase())
+                    val genre = Genre.valueOf(movieElement.getElementsByTagName("Genre").item(0).textContent.uppercase())
 
                     val movie = Movie(duration, id, title, synopsis, rating, totalRatings, releaseDate, genre)
                     movies.add(movie)
