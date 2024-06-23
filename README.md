@@ -1,13 +1,17 @@
 <h1 align="center">Rotten Avocados</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/andluca/projeto322?color=25ba4d">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/count/andluca/projeto322?color=25ba4d">
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/andluca/projeto322?color=25ba4d">
 </p>
 
-
 ## Descrição
 Site de avaliação de filmes e séries (como o Rotten Tomatoes), no qual usuários podem avaliar e ver as notas de filmes e séries.
+
+## Tecnologias
+**Cliente:** TypeScript, React
+**Servidor:** Kotlin, Spring  
+
 
 ## Tópicos Abordados
 
