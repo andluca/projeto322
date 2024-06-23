@@ -1,24 +1,28 @@
 import { useNavigate } from "react-router-dom";
 import Card from "../../components/Card";
-import { movies, series } from "../../mock";
 import * as Styled from "./styles";
+import { useGetMovies } from "../../hooks/movies";
+
+// import { movies, series } from "../../mock";
 
 const Home: React.FC = () => {
 	const navigate = useNavigate();
+
+	const { data: movies } = useGetMovies();
 
 	return (
 		<Styled.Container>
 			<p>Filmes</p>
 			<Styled.List>
-				{movies.map((movie) => (
+				{movies?.map((movie) => (
 					<Card
-						key={movie.name}
+						key={movie.title}
 						item={movie}
 						onClick={() => navigate("/movie/:id".replace(":id", movie.id))}
 					/>
 				))}
 			</Styled.List>
-			<p>Séries</p>
+			{/* <p>Séries</p>
 			<Styled.List>
 				{series.map((serie) => (
 					<Card
@@ -27,7 +31,7 @@ const Home: React.FC = () => {
 						onClick={() => navigate("/serie/:id".replace(":id", serie.id))}
 					/>
 				))}
-			</Styled.List>
+			</Styled.List> */}
 		</Styled.Container>
 	);
 };
