@@ -4,7 +4,7 @@ plugins {
     kotlin("plugin.spring")
 }
 
-group = "org.unicamp.rottenavocados"
+group = "com.unicamp.rottenavocados"
 java.sourceCompatibility = JavaVersion.VERSION_17
 version = "0.0.1-SNAPSHOT"
 
