@@ -4,7 +4,7 @@ plugins {
     kotlin("plugin.spring")
 }
 
-group = "org.unicamp.rottenavocados"
+group = "com.unicamp.rottenavocados"
 java.sourceCompatibility = JavaVersion.VERSION_17
 version = "0.0.1-SNAPSHOT"
 
@@ -15,6 +15,7 @@ repositories {
 dependencies {
     implementation(project(":core"))
 
+    implementation("jakarta.inject:jakarta.inject-api:2.0.1")
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 }
 

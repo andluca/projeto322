@@ -1,6 +1,15 @@
 package com.unicamp.rottenavocados.core.model.genre
 
-internal data class Genre (
-    val description: String,
-    val name: String
-)
+enum class Genre {
+    ACTION,
+    ADVENTURE,
+    COMEDY,
+    CRIME,
+    DRAMA,
+    FANTASY,
+    HORROR,
+    MYSTERY,
+    ROMANCE,
+    SCI_FI,
+    THRILLER
+}

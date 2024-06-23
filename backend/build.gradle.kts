@@ -54,6 +54,18 @@ subprojects {
 		testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	}
 
+	sourceSets {
+		main {
+			resources {
+				srcDir("src/main/resources")
+			}
+		}
+	}
+
+	tasks.withType<Copy> {
+		duplicatesStrategy = DuplicatesStrategy.INCLUDE
+	}
+
 	tasks.withType<KotlinCompile> {
 		kotlinOptions {
 			freeCompilerArgs = listOf("-Xjsr305=strict")
