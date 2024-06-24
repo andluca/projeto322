@@ -2,10 +2,11 @@ import { useNavigate, useParams } from "react-router-dom";
 
 import * as Styled from "./styles";
 import { useGetMovies } from "../../hooks/movies";
+import { genres } from "../../hooks/translation";
 
 const formatDate = (date?: string) => {
 	const args = date?.split("-");
-	return args?.[2] + "/" + args?.[1] + "/" + args?.[0];
+	return args?.reverse().join("/");
 };
 
 const MoviePage: React.FC = () => {
@@ -17,6 +18,7 @@ const MoviePage: React.FC = () => {
 
 	if (!movie) {
 		navigate("/");
+		return;
 	}
 
 	return (
@@ -36,7 +38,7 @@ const MoviePage: React.FC = () => {
 				</div>
 			</div>
 			<Styled.Reviews>
-				<h1>Availiações</h1>
+				<h1>Avaliações</h1>
 			</Styled.Reviews>
 		</Styled.Container>
 	);
