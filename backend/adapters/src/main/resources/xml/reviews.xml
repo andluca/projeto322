@@ -1,0 +1,14 @@
+<Reviews>
+    <Review>
+        <Id>af4454c0-f69d-4a90-a740-af2a4361f894</Id>
+        <IdAuthor>66cf554d-8b34-417d-8551-a28a31feba88</IdAuthor>
+        <IdReviewable>123e4567-e89b-12d3-a456-426614174000</IdReviewable>
+        <Rating>7</Rating>
+    </Review>
+    <Review>
+        <Id>222abfcd-2342-480a-9e26-b0496b4a3097</Id>
+        <IdAuthor>7c80175d-629e-436c-ad56-6b8f45e13f7f</IdAuthor>
+        <IdReviewable>123e4567-e89b-12d3-a456-426614174001</IdReviewable>
+        <Rating>10</Rating>
+    </Review>
+</Reviews>
