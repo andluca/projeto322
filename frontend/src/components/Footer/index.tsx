@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
 					<p>André Lucas</p>
 					<p>Lucas Peixoto</p>
 					<p>Felipe Pires</p>
-					<p>Arthur</p>
+					<p>Artur Dias</p>
 				</div>
 		</Styled.Container>
 	);

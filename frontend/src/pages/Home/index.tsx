@@ -3,13 +3,11 @@ import Card from "../../components/Card";
 import * as Styled from "./styles";
 import { useGetMovies } from "../../hooks/movies";
 
-// import { movies, series } from "../../mock";
 
 const Home: React.FC = () => {
 	const navigate = useNavigate();
 
 	const { data: movies } = useGetMovies();
-	// console.log(movies)
 
 	return (
 		<Styled.Container>
