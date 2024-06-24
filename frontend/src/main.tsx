@@ -10,9 +10,7 @@ import Header from "./components/Header/index.tsx";
 
 import "./global.css";
 
-import { movies, series } from "./mock";
 import Footer from "./components/Footer/index.tsx";
-console.log(movies.length, series.length);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>

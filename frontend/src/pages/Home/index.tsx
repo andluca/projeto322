@@ -3,13 +3,12 @@ import Card from "../../components/Card";
 import * as Styled from "./styles";
 import { useGetMovies } from "../../hooks/movies";
 
-// import { movies, series } from "../../mock";
 
 const Home: React.FC = () => {
 	const navigate = useNavigate();
 
 	const { data: movies } = useGetMovies();
-	// console.log(movies)
+	console.log(movies)
 
 	return (
 		<Styled.Container>
@@ -23,16 +22,6 @@ const Home: React.FC = () => {
 					/>
 				))}
 			</Styled.List>
-			{/* <p>Séries</p>
-			<Styled.List>
-				{series.map((serie) => (
-					<Card
-						key={serie.name}
-						item={serie}
-						onClick={() => navigate("/serie/:id".replace(":id", serie.id))}
-					/>
-				))}
-			</Styled.List> */}
 		</Styled.Container>
 	);
 };

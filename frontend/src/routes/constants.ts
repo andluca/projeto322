@@ -1,6 +1,6 @@
 import { RouteObject } from "react-router-dom";
 
-import { Home, Movie, Serie } from '../pages'
+import { Home, Movie } from '../pages'
 
 export const ROUTES: RouteObject[] = [
   {
@@ -11,8 +11,4 @@ export const ROUTES: RouteObject[] = [
     path: '/movie/:id',
     Component: Movie,
   },
-  {
-    path: '/serie/:id',
-    Component: Serie,
-  }
 ]
