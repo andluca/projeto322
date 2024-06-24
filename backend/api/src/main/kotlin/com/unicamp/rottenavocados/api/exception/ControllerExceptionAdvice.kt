@@ -13,6 +13,10 @@ class ControllerExceptionAdvice {
     @ExceptionHandler(value = [DataAccessException::class])
     fun handleDataAccessException(ex: DataAccessException, request: WebRequest) =
         handleException(ex.localizedMessage, HttpStatus.INTERNAL_SERVER_ERROR)
+    
+    @ExceptionHandler(value = [IllegalArgumentException::class])
+    fun handleBadRequestException(ex: IllegalArgumentException, request: WebRequest) =
+        handleException(ex.localizedMessage, HttpStatus.BAD_REQUEST)
 
     private fun handleException(
         description: String,

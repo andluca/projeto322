@@ -14,7 +14,12 @@ internal class ReviewRepositoryAdapter(
     companion object {
         val PATH = System.getenv("REVIEW_XML_PATH") ?: throw Exception("Environment Variable REVIEW_XML_PATH is required")
     }
-    override fun postReview(review: Review): Review = reader.writeOne(PATH, review)
+    override fun postReview(review: Review): Review {
+        if(review.rating < 0 || review.rating > 10)
+            throw IllegalArgumentException("Rating should be between 0 and 10")
+    
+        return reader.writeOne(PATH, review)
+    }
 
     override fun getReview(movieId: UUID): ReviewResponse {
         val reviews = reader.read(PATH)
