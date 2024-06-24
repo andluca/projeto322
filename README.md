@@ -49,4 +49,7 @@ Herança:
 + A classe ControllerExceptionDevice também auxilia a garantir que erros sejam tratados antes de enviados aos usuários da API
 
 #### Arquivos (gravação e leitura)
-+ Dados como Filmes e Avaliações são salvos em arquivos XML pela classe MovieReader e 
++ Dados como Filmes e Avaliações são salvos em arquivos XML pela classe MovieReader e ReviewReader
+
+#### UML
+<img alt="UML Diagram" src="uml.png" />
