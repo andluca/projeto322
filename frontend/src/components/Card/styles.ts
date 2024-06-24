@@ -33,7 +33,7 @@ export const Container = styled.div`
   button {
   width: 100%;
     border: none;
-    background: #024201;
+    background: #001c04;
     color: #fff;
     padding: 4px 0;
     cursor: pointer;

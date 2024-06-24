@@ -11,7 +11,7 @@ export const Container = styled.header`
 
   h1 {
     font-weight: 500;
-    background: #024201;
+    background: #001c04;
     color: #fff;
     font-size:25px;
     padding: 0px 10px 0px 10px;

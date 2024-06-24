@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.footer`
   width: 100%;
   padding: 30px 80px;
-  background: #024201;
+  background: #001c04;
   align-items: center;
 
   h1 {
