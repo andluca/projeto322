@@ -1,3 +1,5 @@
+<img src="logo.png" width=40/>
+
 <h1 align="center">Rotten Avocados</h1>
 
 <p align="center">
