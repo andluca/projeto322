@@ -7,10 +7,15 @@ export const Container = styled.header`
 
   display: flex;
   align-items: center;
-  background: #fff;
+  background: #171717;
 
   h1 {
     font-weight: 500;
+    background: #024201;
+    color: #fff;
+    font-size:25px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 8px;
     font-family: 'Saira Stencil One';
   }
 `;
