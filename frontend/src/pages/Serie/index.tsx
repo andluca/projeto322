@@ -20,13 +20,13 @@ const SeriePage: React.FC = () => {
 
 	return (
 		<Styled.Container>
-			<h1>{serie?.name}</h1>
-			<p>Gênero: {serie?.genre.name}</p>
+			<h1>{serie?.title}</h1>
+			<p>Gênero: {serie?.genre}</p>
 			<p>
 				{serie?.seasons} temporada{serie?.seasons && serie?.seasons > 1 && "s"}
 			</p>
 			<p>{serie?.episodes} episódio{serie?.episodes && serie?.episodes > 1 && "s"}</p>
-			<p>Nota {serie?.grade}</p>
+			<p>Nota {serie?.rating}</p>
 			<p>Lançado em {formatDate(serie?.releaseDate)}</p>
 
 			<Styled.Reviews>

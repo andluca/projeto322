@@ -8,9 +8,9 @@ interface Props {
 const Card: React.FC<Props> = ({ item, onClick }) => {
 	return (
 		<Styled.Container>
-			<p>{item.name}</p>
+			<p>{item.title}</p>
 			<div>
-				<p>{item.synopsis}</p>
+				<p>{item.synopsys}</p>
 			</div>
 			<button onClick={onClick}>Detalhes</button>
 		</Styled.Container>
