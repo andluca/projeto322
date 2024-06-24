@@ -1,29 +1,39 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: calc((100% - 80px - 60px) / 5);
-  height: 180px;
+  width: 100%;
+  height: 300px;
   margin-right: 10px;
   margin-bottom: 20px;
   background: #fff;
+  color: #fff;
   padding: 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-
+  border-radius: 10px;
+  background-image: url("https://m.media-amazon.com/images/M/MV5BZTE0NDk1NzctNmIzMC00NjQ3LWFkMTItOTBhNGQyZmI3ZTIzXkEyXkFqcGc@._V1_QL75_UX760_CR0,0,760,428_.jpg");
+  background-size: cover;
   &:nth-child(5n) {
     margin-right: 0;
   }
 
   div > p {
-    margin-top: 8px;
+    background: rgba(0,0,0, 0.8);
+    margin-bottom: 5px;
     font-size: 12px;
+    color: #fff;
+  }
+  
+  
+  p {
+    background: rgba(0,0,0, 0.8);
   }
 
   button {
+  width: 100%;
     border: none;
-    background: #008000;
+    background: #001c04;
     color: #fff;
     padding: 4px 0;
     cursor: pointer;

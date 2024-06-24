@@ -10,9 +10,9 @@ const Card: React.FC<Props> = ({ item, onClick }) => {
 		<Styled.Container>
 			<p>{item.title}</p>
 			<div>
-				<p>{item.synopsys}</p>
+				<p>{item.synopsys}</p>	
+				<button onClick={onClick}>Detalhes</button>
 			</div>
-			<button onClick={onClick}>Detalhes</button>
 		</Styled.Container>
 	);
 };

@@ -21,12 +21,20 @@ const MoviePage: React.FC = () => {
 
 	return (
 		<Styled.Container>
-			<h1>{movie?.title}</h1>
-			<p>Gênero: {movie?.genre}</p>
-			<p>{movie?.duration} minutos</p>
-			<p>Nota {movie?.rating}</p>
-			<p>Lançado em {formatDate(movie?.releaseDate)}</p>
-
+			<div className="main">
+				<div className="picture">
+					<figure>
+						<img src="https://uauposters.com.br/media/catalog/product/2/5/258820220222-uau-posters-the-batman-filmes-1.jpg"/>
+					</figure>
+				</div>
+				<div className="column">
+					<h1>{movie?.title}</h1>
+					<p>Gênero: {movie?.genre}</p>
+					<p>{movie?.duration} minutos</p>
+					<p>Nota {movie?.rating}</p>
+					<p>Lançado em {formatDate(movie?.releaseDate)}</p>
+				</div>
+			</div>
 			<Styled.Reviews>
 				<h1>Availiações</h1>
 			</Styled.Reviews>

@@ -11,6 +11,7 @@ import Header from "./components/Header/index.tsx";
 import "./global.css";
 
 import { movies, series } from "./mock";
+import Footer from "./components/Footer/index.tsx";
 console.log(movies.length, series.length);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 			<QueryClientProvider client={queryClient}>
 				<Header />
 				<RouterProvider router={router} />
+				<Footer />
 			</QueryClientProvider>
 		</ErrorBoundaryProvider>
 	</React.StrictMode>
