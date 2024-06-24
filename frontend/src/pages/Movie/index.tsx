@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { movies } from "../../mock";
 
 import * as Styled from "./styles";
+import { useGetMovies } from "../../hooks/movies";
 
 const formatDate = (date?: string) => {
 	const args = date?.split("-");
@@ -11,8 +11,9 @@ const formatDate = (date?: string) => {
 const MoviePage: React.FC = () => {
 	const id = useParams().id;
 	const navigate = useNavigate();
+	const { data: movies } = useGetMovies();
 
-	const movie = movies.find((m) => m.id === id);
+	const movie = movies?.find((m) => m.id === id);
 
 	if (!movie) {
 		navigate("/");
@@ -20,10 +21,10 @@ const MoviePage: React.FC = () => {
 
 	return (
 		<Styled.Container>
-			<h1>{movie?.name}</h1>
-			<p>Gênero: {movie?.genre.name}</p>
+			<h1>{movie?.title}</h1>
+			<p>Gênero: {movie?.genre}</p>
 			<p>{movie?.duration} minutos</p>
-			<p>Nota {movie?.grade}</p>
+			<p>Nota {movie?.rating}</p>
 			<p>Lançado em {formatDate(movie?.releaseDate)}</p>
 
 			<Styled.Reviews>

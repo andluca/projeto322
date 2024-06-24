@@ -1,15 +1,11 @@
-interface Genre {
-  name: string;
-  description: string;
-}
-
 interface Assessable {
-  id: string;
-  name: string;
-  synopsis: string;
-  genre: Genre;
-  grade: number;
-  releaseDate: string;
+  id: string,
+  title: string,
+  synopsys: string,
+  rating: number,
+  totalRatings: number,
+  releaseDate: string,
+  genre: string,
 }
 
 interface Movie extends Assessable {
