@@ -5,7 +5,7 @@ import * as Styled from "./styles";
 
 const formatDate = (date?: string) => {
 	const args = date?.split("-");
-	return args?.[2] + "/" + args?.[1] + "/" + args?.[0];
+	return args?.reverse().join("/");
 };
 
 const SeriePage: React.FC = () => {
@@ -25,7 +25,10 @@ const SeriePage: React.FC = () => {
 			<p>
 				{serie?.seasons} temporada{serie?.seasons && serie?.seasons > 1 && "s"}
 			</p>
-			<p>{serie?.episodes} episódio{serie?.episodes && serie?.episodes > 1 && "s"}</p>
+			<p>
+				{serie?.episodes} episódio
+				{serie?.episodes && serie?.episodes > 1 && "s"}
+			</p>
 			<p>Nota {serie?.rating}</p>
 			<p>Lançado em {formatDate(serie?.releaseDate)}</p>
 
