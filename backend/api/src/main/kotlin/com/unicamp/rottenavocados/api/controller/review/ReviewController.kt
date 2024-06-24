@@ -35,6 +35,6 @@ class ReviewController(
         return createReviewUsecasePort.execute(ratedReview)
     }
 
-    @RequestMapping("/{movieId}")
+    @GetMapping("/{movieId}")
     fun getReview(@PathVariable movieId: UUID): ReviewResponse = queryReviewUsecasePort.execute(movieId)
 }
