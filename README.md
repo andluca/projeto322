@@ -29,8 +29,8 @@
     <td>253333</td>
   </tr>
   <tr>
-    <td><a href="https://github.com/artuurdias">Arthur Dias</a></td>
-    <td></td>
+    <td><a href="https://github.com/artuurdias">Artur Dias de Oliveira</a></td>
+    <td>252635</td>
   </tr>
 </table>
 
