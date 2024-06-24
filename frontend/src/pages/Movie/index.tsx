@@ -12,7 +12,7 @@ type Inputs = {
 
 const formatDate = (date?: string) => {
 	const args = date?.split("-");
-	return args?.[2] + "/" + args?.[1] + "/" + args?.[0];
+	return args?.reverse().join("/");
 };
 
 const MoviePage: React.FC = () => {
@@ -37,6 +37,7 @@ const MoviePage: React.FC = () => {
 
 	if (!movie) {
 		navigate("/");
+		return;
 	}
 
 	const handleStarClick = (nextValue: number) => {

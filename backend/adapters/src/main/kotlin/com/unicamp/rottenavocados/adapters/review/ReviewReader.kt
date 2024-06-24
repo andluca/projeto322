@@ -18,8 +18,38 @@ import javax.xml.transform.stream.StreamResult
 
 @Service
 class ReviewReader(): FileReader {
-    override fun read(path: String): String {
-        return ""
+    override fun read(path: String): List<Review> {
+        val reviews = mutableListOf<Review>()
+
+        try {
+            val inputStream = FileInputStream(path)
+            val dbFactory = DocumentBuilderFactory.newInstance()
+            val dBuilder = dbFactory.newDocumentBuilder()
+            val doc = dBuilder.parse(inputStream)
+            doc.documentElement.normalize()
+
+            val nodeList: NodeList = doc.getElementsByTagName("Review")
+
+            for (i in 0 until nodeList.length) {
+                val node = nodeList.item(i)
+                if (node.nodeType == Element.ELEMENT_NODE) {
+                    val reviewElement = node as Element
+
+                    val id = UUID.fromString(reviewElement.getElementsByTagName("Id").item(0).textContent)
+                    val idAuthor = UUID.fromString(reviewElement.getElementsByTagName("IdAuthor").item(0).textContent)
+                    val idReviewable = UUID.fromString(reviewElement.getElementsByTagName("IdReviewable").item(0).textContent)
+                    val rating = reviewElement.getElementsByTagName("Rating").item(0).textContent.toIntOrNull() ?: 0
+                    
+                    val review = Review(id, idAuthor, idReviewable, rating)
+                    reviews.add(review)
+                }
+            }
+        } catch (e: Exception) {
+            println("Error reading reviews file: ${e.message}")
+            e.printStackTrace()
+        }
+
+        return reviews
     }
 
     // TODO: implement real post functionality

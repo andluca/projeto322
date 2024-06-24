@@ -21,16 +21,6 @@ const Home: React.FC = () => {
 					/>
 				))}
 			</Styled.List>
-			{/* <p>Séries</p>
-			<Styled.List>
-				{series.map((serie) => (
-					<Card
-						key={serie.name}
-						item={serie}
-						onClick={() => navigate("/serie/:id".replace(":id", serie.id))}
-					/>
-				))}
-			</Styled.List> */}
 		</Styled.Container>
 	);
 };
