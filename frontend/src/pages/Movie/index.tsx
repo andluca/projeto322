@@ -36,7 +36,12 @@ const MoviePage: React.FC = () => {
 				</div>
 			</div>
 			<Styled.Reviews>
-				<h1>Availiações</h1>
+				<h1>Avaliações</h1>
+				<div>
+					<p>
+						Avalie o filme
+					</p>
+				</div>
 			</Styled.Reviews>
 		</Styled.Container>
 	);
