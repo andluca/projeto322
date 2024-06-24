@@ -1,0 +1,102 @@
+<Movies>
+    <Movie>
+        <Id>123e4567-e89b-12d3-a456-426614174000</Id>
+        <Title>The Grand Escape</Title>
+        <Duration>120</Duration>
+        <Synopsis>Five friends embark on a daring escape from a mysterious island.</Synopsis>
+        <Rating>8.5</Rating>
+        <TotalRatings>1200</TotalRatings>
+        <ReleaseDate>2023-05-20</ReleaseDate>
+        <Genre>ADVENTURE</Genre>
+    </Movie>
+    <Movie>
+        <Id>123e4567-e89b-12d3-a456-426614174001</Id>
+        <Title>Lost in Time</Title>
+        <Duration>90</Duration>
+        <Synopsis>A scientist discovers a way to travel through time, but things go awry.</Synopsis>
+        <Rating>7.8</Rating>
+        <TotalRatings>950</TotalRatings>
+        <ReleaseDate>2024-01-15</ReleaseDate>
+        <Genre>SCI_FI</Genre>
+    </Movie>
+    <Movie>
+        <Id>123e4567-e89b-12d3-a456-426614174002</Id>
+        <Title>Under the Stars</Title>
+        <Duration>110</Duration>
+        <Synopsis>Two strangers meet and share a night of adventure under the stars.</Synopsis>
+        <Rating>9.1</Rating>
+        <TotalRatings>2000</TotalRatings>
+        <ReleaseDate>2022-11-05</ReleaseDate>
+        <Genre>ROMANCE</Genre>
+    </Movie>
+    <Movie>
+        <Id>123e4567-e89b-12d3-a456-426614174003</Id>
+        <Title>Ghost of the Mansion</Title>
+        <Duration>95</Duration>
+        <Synopsis>A group of friends explore an abandoned mansion, only to find it's haunted.</Synopsis>
+        <Rating>6.5</Rating>
+        <TotalRatings>800</TotalRatings>
+        <ReleaseDate>2023-10-31</ReleaseDate>
+        <Genre>HORROR</Genre>
+    </Movie>
+    <Movie>
+        <Id>123e4567-e89b-12d3-a456-426614174004</Id>
+        <Title>Code of Silence</Title>
+        <Duration>105</Duration>
+        <Synopsis>A detective must break the code of silence that exists among criminals to solve a case.</Synopsis>
+        <Rating>7.2</Rating>
+        <TotalRatings>500</TotalRatings>
+        <ReleaseDate>2024-04-22</ReleaseDate>
+        <Genre>CRIME</Genre>
+    </Movie>
+    <Movie>
+        <Id>123e4567-e89b-12d3-a456-426614174005</Id>
+        <Title>Alien Encounter</Title>
+        <Duration>130</Duration>
+        <Synopsis>After a mysterious spacecraft lands on Earth, a team is assembled to investigate.</Synopsis>
+        <Rating>8.0</Rating>
+        <TotalRatings>1500</TotalRatings>
+        <ReleaseDate>2023-07-07</ReleaseDate>
+        <Genre>SCI_FI</Genre>
+    </Movie>
+    <Movie>
+        <Id>123e4567-e89b-12d3-a456-426614174006</Id>
+        <Title>Run for Freedom</Title>
+        <Duration>115</Duration>
+        <Synopsis>A historical drama about a slave's perilous journey to freedom.</Synopsis>
+        <Rating>9.3</Rating>
+        <TotalRatings>2200</TotalRatings>
+        <ReleaseDate>2022-12-25</ReleaseDate>
+        <Genre>DRAMA</Genre>
+    </Movie>
+    <Movie>
+        <Id>123e4567-e89b-12d3-a456-426614174007</Id>
+        <Title>Edge of Tomorrow</Title>
+        <Duration>123</Duration>
+        <Synopsis>In a post-apocalyptic world, survivors fight to reclaim Earth from alien invaders.</Synopsis>
+        <Rating>8.7</Rating>
+        <TotalRatings>3000</TotalRatings>
+        <ReleaseDate>2023-08-18</ReleaseDate>
+        <Genre>ACTION</Genre>
+    </Movie>
+    <Movie>
+        <Id>123e4567-e89b-12d3-a456-426614174008</Id>
+        <Title>The Last Poet</Title>
+        <Duration>98</Duration>
+        <Synopsis>The story of the last surviving poet in a dystopian society where art is banned.</Synopsis>
+        <Rating>7.9</Rating>
+        <TotalRatings>1100</TotalRatings>
+        <ReleaseDate>2024-02-14</ReleaseDate>
+        <Genre>DRAMA</Genre>
+    </Movie>
+    <Movie>
+        <Id>123e4567-e89b-12d3-a456-426614174009</Id>
+        <Title>Quest for the Unknown</Title>
+        <Duration>140</Duration>
+        <Synopsis>An epic adventure of a group of explorers searching for a mythical land.</Synopsis>
+        <Rating>8.2</Rating>
+        <TotalRatings>1700</TotalRatings>
+        <ReleaseDate>2023-09-09</ReleaseDate>
+        <Genre>ADVENTURE</Genre>
+    </Movie>
+</Movies>

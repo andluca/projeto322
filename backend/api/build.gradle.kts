@@ -16,7 +16,7 @@ configurations {
     }
 }
 
-group = "org.unicamp.rottenavocados"
+group = "com.unicamp.rottenavocados"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
 repositories {

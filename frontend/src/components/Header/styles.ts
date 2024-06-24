@@ -11,5 +11,6 @@ export const Container = styled.header`
 
   h1 {
     font-weight: 500;
+    font-family: 'Saira Stencil One';
   }
 `;
