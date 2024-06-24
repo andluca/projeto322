@@ -10,7 +10,7 @@ internal class ReviewRepositoryAdapter(
     private val reader: ReviewReader
 ): ReviewRepositoryPort {
     companion object {
-        const val PATH = "xml/reviews.xml"
+        val PATH = System.getenv("REVIEW_XML_PATH") ?: throw Exception("Environment Variable REVIEW_XML_PATH is required")
     }
     override fun postReview(review: Review): Review = reader.writeOne(PATH, review)
 }

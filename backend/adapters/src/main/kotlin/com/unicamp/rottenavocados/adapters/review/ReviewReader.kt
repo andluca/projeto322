@@ -10,6 +10,11 @@ import java.time.LocalDate
 import java.util.UUID
 import javax.xml.parsers.DocumentBuilderFactory
 import java.io.File
+import java.io.FileInputStream
+
+import javax.xml.transform.TransformerFactory
+import javax.xml.transform.dom.DOMSource
+import javax.xml.transform.stream.StreamResult
 
 @Service
 class ReviewReader(): FileReader {
@@ -20,10 +25,10 @@ class ReviewReader(): FileReader {
     // TODO: implement real post functionality
     fun writeOne(path: String, review: Review): Review {
         try {
-            val resource = ClassPathResource(path)
+            val inputStream = FileInputStream(path)
             val dbFactory = DocumentBuilderFactory.newInstance()
             val dBuilder = dbFactory.newDocumentBuilder()
-            val doc = dBuilder.parse(resource.inputStream)
+            val doc = dBuilder.parse(inputStream)
             doc.documentElement.normalize()
 
             val reviewList = doc.getElementsByTagName("Reviews").item(0)
@@ -44,7 +49,14 @@ class ReviewReader(): FileReader {
             reviewElement.appendChild(ratingElement)
 
             reviewList.appendChild(reviewElement)
-            resource.getFile().writeText(reviewList.toString())
+
+            val transformerFactory = TransformerFactory.newInstance()
+            val transformer = transformerFactory.newTransformer()
+            val source = DOMSource(doc)
+            val result = StreamResult(File(path))
+
+            transformer.transform(source, result)
+
         } catch (e: Exception) {
             println("Error writing review file: ${e.message}")
             e.printStackTrace()
