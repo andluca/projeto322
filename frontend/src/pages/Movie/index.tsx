@@ -5,6 +5,7 @@ import { useState } from "react";
 import Modal from "react-modal";
 import { useForm, SubmitHandler } from "react-hook-form";
 import StarRatingComponent from "react-star-rating-component";
+import { genres } from "../../hooks/translation";
 
 type Inputs = {
 	rating: number;
@@ -133,7 +134,7 @@ const MoviePage: React.FC = () => {
 					</div>
 					<div className="column">
 						<h1>{movie?.title}</h1>
-						<p>Gênero: {movie?.genre}</p>
+						<p>Gênero: {genres[movie?.genre as keyof typeof genres]}</p>
 						<p>{movie?.duration} minutos</p>
 						<p>Nota: {Number(review?.rating) || "---"}</p>
 						<p>Quantidade de avaliações: {review?.totalRatings}</p>
