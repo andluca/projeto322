@@ -139,10 +139,10 @@ const MoviePage: React.FC = () => {
 						<p>Nota: {Number(review?.rating) || "---"}</p>
 						<p>Quantidade de avaliações: {review?.totalRatings}</p>
 						<p>Lançado em {formatDate(movie?.releaseDate)}</p>
+						<p>Sinópse: {movie.synopsys}</p>
 					</div>
 				</div>
 				<Styled.Reviews>
-					<h1>Avaliações</h1>
 					<div onClick={handleOpenModal}>
 						<p>Avalie o filme</p>
 					</div>

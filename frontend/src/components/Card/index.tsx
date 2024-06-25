@@ -7,7 +7,7 @@ interface Props {
 
 const Card: React.FC<Props> = ({ item, onClick }) => {
 	return (
-		<Styled.Container>
+		<Styled.Container posterUrl={item.posterUrl}>
 				<p>{item.title}</p>
 				<div>
 					<p>{item.synopsys}</p>	
