@@ -1,102 +1,104 @@
 <Movies>
     <Movie>
         <Id>123e4567-e89b-12d3-a456-426614174000</Id>
-        <Title>The Grand Escape</Title>
-        <Duration>120</Duration>
-        <Synopsis>Five friends embark on a daring escape from a mysterious island.</Synopsis>
+        <Title>The Lord of the Rings: The Fellowship of the Ring</Title>
+        <Duration>178</Duration>
+        <Synopsis>A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.</Synopsis>
         <Rating>8.5</Rating>
+        <PosterUrl>https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg</PosterUrl>
+        <BannerUrl></BannerUrl>
         <TotalRatings>1200</TotalRatings>
-        <ReleaseDate>2023-05-20</ReleaseDate>
+        <ReleaseDate>2001-05-20</ReleaseDate>
         <Genre>ADVENTURE</Genre>
     </Movie>
     <Movie>
         <Id>123e4567-e89b-12d3-a456-426614174001</Id>
-        <Title>Lost in Time</Title>
-        <Duration>90</Duration>
-        <Synopsis>A scientist discovers a way to travel through time, but things go awry.</Synopsis>
+        <Title>The Good, the Bad and the Ugly</Title>
+        <Duration>178</Duration>
+        <Synopsis>A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.</Synopsis>
         <Rating>7.8</Rating>
         <TotalRatings>950</TotalRatings>
-        <ReleaseDate>2024-01-15</ReleaseDate>
-        <Genre>SCI_FI</Genre>
+        <ReleaseDate>1966-01-15</ReleaseDate>
+        <Genre>ADVENTURE</Genre>
     </Movie>
     <Movie>
         <Id>123e4567-e89b-12d3-a456-426614174002</Id>
-        <Title>Under the Stars</Title>
-        <Duration>110</Duration>
-        <Synopsis>Two strangers meet and share a night of adventure under the stars.</Synopsis>
+        <Title>Forrest Gump: O Contador de Histórias</Title>
+        <Duration>142</Duration>
+        <Synopsis>Os governos dos presidentes Kennedy e Johnson, os eventos do Vietnã e Watergate e outras histórias são mostradas através da perspectiva de um homem do Alabama com baixo quociente intelectual.</Synopsis>
         <Rating>9.1</Rating>
         <TotalRatings>2000</TotalRatings>
-        <ReleaseDate>2022-11-05</ReleaseDate>
-        <Genre>ROMANCE</Genre>
-    </Movie>
-    <Movie>
-        <Id>123e4567-e89b-12d3-a456-426614174003</Id>
-        <Title>Ghost of the Mansion</Title>
-        <Duration>95</Duration>
-        <Synopsis>A group of friends explore an abandoned mansion, only to find it's haunted.</Synopsis>
-        <Rating>6.5</Rating>
-        <TotalRatings>800</TotalRatings>
-        <ReleaseDate>2023-10-31</ReleaseDate>
-        <Genre>HORROR</Genre>
-    </Movie>
-    <Movie>
-        <Id>123e4567-e89b-12d3-a456-426614174004</Id>
-        <Title>Code of Silence</Title>
-        <Duration>105</Duration>
-        <Synopsis>A detective must break the code of silence that exists among criminals to solve a case.</Synopsis>
-        <Rating>7.2</Rating>
-        <TotalRatings>500</TotalRatings>
-        <ReleaseDate>2024-04-22</ReleaseDate>
-        <Genre>CRIME</Genre>
-    </Movie>
-    <Movie>
-        <Id>123e4567-e89b-12d3-a456-426614174005</Id>
-        <Title>Alien Encounter</Title>
-        <Duration>130</Duration>
-        <Synopsis>After a mysterious spacecraft lands on Earth, a team is assembled to investigate.</Synopsis>
-        <Rating>8.0</Rating>
-        <TotalRatings>1500</TotalRatings>
-        <ReleaseDate>2023-07-07</ReleaseDate>
-        <Genre>SCI_FI</Genre>
-    </Movie>
-    <Movie>
-        <Id>123e4567-e89b-12d3-a456-426614174006</Id>
-        <Title>Run for Freedom</Title>
-        <Duration>115</Duration>
-        <Synopsis>A historical drama about a slave's perilous journey to freedom.</Synopsis>
-        <Rating>9.3</Rating>
-        <TotalRatings>2200</TotalRatings>
-        <ReleaseDate>2022-12-25</ReleaseDate>
+        <ReleaseDate>1994-11-05</ReleaseDate>
         <Genre>DRAMA</Genre>
     </Movie>
     <Movie>
-        <Id>123e4567-e89b-12d3-a456-426614174007</Id>
-        <Title>Edge of Tomorrow</Title>
-        <Duration>123</Duration>
-        <Synopsis>In a post-apocalyptic world, survivors fight to reclaim Earth from alien invaders.</Synopsis>
-        <Rating>8.7</Rating>
-        <TotalRatings>3000</TotalRatings>
-        <ReleaseDate>2023-08-18</ReleaseDate>
+        <Id>123e4567-e89b-12d3-a456-426614174003</Id>
+        <Title>Clube da Luta</Title>
+        <Duration>139</Duration>
+        <Synopsis>Um trabalhador de escritório e um fabricante de sabonetes formam um clube de luta clandestino que evolui para algo muito maior.</Synopsis>
+        <Rating>6.5</Rating>
+        <TotalRatings>800</TotalRatings>
+        <ReleaseDate>1999-10-31</ReleaseDate>
+        <Genre>DRAMA</Genre>
+    </Movie>
+    <Movie>
+        <Id>123e4567-e89b-12d3-a456-426614174004</Id>
+        <Title>A Origem</Title>
+        <Duration>148</Duration>
+        <Synopsis>Um ladrão que rouba segredos corporativos através da tecnologia de entrar no subconsciente recebe a tarefa inversa de plantar uma idéia na mente do diretor de uma grande empresa.</Synopsis>
+        <Rating>7.2</Rating>
+        <TotalRatings>500</TotalRatings>
+        <ReleaseDate>2010-04-22</ReleaseDate>
+        <Genre>SCI_FI</Genre>
+    </Movie>
+    <Movie>
+        <Id>123e4567-e89b-12d3-a456-426614174005</Id>
+        <Title>Star Wars: Episódio V - O Império Contra-Ataca</Title>
+        <Duration>130</Duration>
+        <Synopsis>Depois que a Aliança Rebelde é dominada pelo Império, Luke Skywalker começa seu treinamento Jedi com Yoda, enquanto seus amigos são perseguidos por toda a galáxia por Darth Vader e pelo caçador de recompensas Boba Fett.</Synopsis>
+        <Rating>8.0</Rating>
+        <TotalRatings>1500</TotalRatings>
+        <ReleaseDate>1980-07-07</ReleaseDate>
+        <Genre>FANTASY</Genre>
+    </Movie>
+    <Movie>
+        <Id>123e4567-e89b-12d3-a456-426614174006</Id>
+        <Title>Matrix</Title>
+        <Duration>136</Duration>
+        <Synopsis>Um hacker aprende com os misteriosos rebeldes sobre a verdadeira natureza de sua realidade e seu papel na guerra contra seus controladores.</Synopsis>
+        <Rating>9.3</Rating>
+        <TotalRatings>2200</TotalRatings>
+        <ReleaseDate>1999-12-25</ReleaseDate>
         <Genre>ACTION</Genre>
     </Movie>
     <Movie>
+        <Id>123e4567-e89b-12d3-a456-426614174007</Id>
+        <Title>Um Estranho no Ninho</Title>
+        <Duration>133</Duration>
+        <Synopsis>Um criminoso alega insanidade para ser enviado a um centro de saúde mental, onde se rebela contra a opressiva enfermeira e mobiliza os pacientes a quem ela atemoriza.</Synopsis>
+        <Rating>8.7</Rating>
+        <TotalRatings>3000</TotalRatings>
+        <ReleaseDate>1995-08-18</ReleaseDate>
+        <Genre>DRAMA</Genre>
+    </Movie>
+    <Movie>
         <Id>123e4567-e89b-12d3-a456-426614174008</Id>
-        <Title>The Last Poet</Title>
-        <Duration>98</Duration>
-        <Synopsis>The story of the last surviving poet in a dystopian society where art is banned.</Synopsis>
+        <Title>Seven: Os Sete Crimes Capitais</Title>
+        <Duration>127</Duration>
+        <Synopsis>Dois detetives, um novato e um veterano, perseguem um assassino em série que usa os sete pecados capitais como motivos.</Synopsis>
         <Rating>7.9</Rating>
         <TotalRatings>1100</TotalRatings>
-        <ReleaseDate>2024-02-14</ReleaseDate>
+        <ReleaseDate>1995-02-14</ReleaseDate>
         <Genre>DRAMA</Genre>
     </Movie>
     <Movie>
         <Id>123e4567-e89b-12d3-a456-426614174009</Id>
-        <Title>Quest for the Unknown</Title>
-        <Duration>140</Duration>
-        <Synopsis>An epic adventure of a group of explorers searching for a mythical land.</Synopsis>
+        <Title>Interestelar</Title>
+        <Duration>169</Duration>
+        <Synopsis>Uma equipe de exploradores viaja através de um buraco de minhoca no espaço, na tentativa de garantir a sobrevivência da humanidade.</Synopsis>
         <Rating>8.2</Rating>
         <TotalRatings>1700</TotalRatings>
-        <ReleaseDate>2023-09-09</ReleaseDate>
-        <Genre>ADVENTURE</Genre>
+        <ReleaseDate>2014-09-09</ReleaseDate>
+        <Genre>SCI_FI</Genre>
     </Movie>
 </Movies>
