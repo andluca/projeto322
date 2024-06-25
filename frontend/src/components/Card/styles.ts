@@ -5,29 +5,34 @@ export const Container = styled.div`
   height: 300px;
   margin-right: 10px;
   margin-bottom: 20px;
-  background: #fff;
+  background: #000;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
   color: #fff;
   padding: 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 10px;
-  background-image: url("https://m.media-amazon.com/images/M/MV5BZTE0NDk1NzctNmIzMC00NjQ3LWFkMTItOTBhNGQyZmI3ZTIzXkEyXkFqcGc@._V1_QL75_UX760_CR0,0,760,428_.jpg");
   background-size: cover;
   &:nth-child(5n) {
     margin-right: 0;
   }
 
   div > p {
-    background: rgba(0,0,0, 0.8);
     margin-bottom: 5px;
     font-size: 12px;
     color: #fff;
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 180px;
   }
   
   
   p {
-    background: rgba(0,0,0, 0.8);
+    font-size: 24px;
+    color:#fff;
+    font-weight: 700;
   }
 
   button {

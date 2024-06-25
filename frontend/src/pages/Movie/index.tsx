@@ -129,7 +129,7 @@ const MoviePage: React.FC = () => {
 				<div className="main">
 					<div className="picture">
 						<figure>
-							<img src="https://uauposters.com.br/media/catalog/product/2/5/258820220222-uau-posters-the-batman-filmes-1.jpg" />
+							<img src={movie.posterUrl} />
 						</figure>
 					</div>
 					<div className="column">
