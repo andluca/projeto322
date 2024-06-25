@@ -118,7 +118,7 @@ const MoviePage: React.FC = () => {
 					<h1>{movie?.title}</h1>
 					<p>Gênero: {movie?.genre}</p>
 					<p>{movie?.duration} minutos</p>
-					<p>Nota: {review?.rating}</p>
+					<p>Nota: {Number(review?.rating)}</p>
 					<p>Quantidade de avaliações: {review?.totalRatings}</p>
 					<p>Lançado em {formatDate(movie?.releaseDate)}</p>
 				</div>
