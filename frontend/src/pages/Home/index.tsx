@@ -8,7 +8,6 @@ const Home: React.FC = () => {
 	const navigate = useNavigate();
 
 	const { data: movies } = useGetMovies();
-	console.log(movies)
 
 	return (
 		<Styled.Container>
