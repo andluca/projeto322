@@ -30,6 +30,13 @@ internal class ReviewRepositoryAdapter(
             totalRating += it.rating
         }
 
-        return ReviewResponse(totalRating / ratingCount, ratingCount)
+        var res: ReviewResponse
+        if(ratingCount != 0) {
+            res = ReviewResponse(totalRating / ratingCount, ratingCount)
+        } else {
+            res = ReviewResponse(0.00f, ratingCount)
+        }
+
+        return res
     }
 }

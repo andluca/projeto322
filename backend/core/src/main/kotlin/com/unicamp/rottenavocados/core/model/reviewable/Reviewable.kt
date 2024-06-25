@@ -8,8 +8,7 @@ abstract class Reviewable(
     open val id: UUID? = null,
     open val title: String,
     open val synopsys: String,
-    open val rating: Float? = null,
-    open val totalRatings: Int = 0, // quantity of ratings
+    open val posterUrl: String,
     open val releaseDate: LocalDate,
     open val genre: Genre
 ) {

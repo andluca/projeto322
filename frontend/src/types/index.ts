@@ -1,9 +1,8 @@
 interface Assessable {
   id: string,
   title: string,
+  posterUrl: string,
   synopsys: string,
-  rating: number,
-  totalRatings: number,
   releaseDate: string,
   genre: string,
 }
