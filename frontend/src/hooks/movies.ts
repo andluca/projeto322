@@ -7,29 +7,12 @@ export const useGetMovies = () => useQuery({
   queryFn: getMovies,
 })
 
-export const useGetReviews = (id: string) => {
-  const endPoint = async () =>{
-    const response = await getReview(id)
-    return response
-  }
+export const useGetReviews = (id: string) => useQuery({
+  queryKey: ['get-reviews', id],
+  queryFn: () => getReview(id),
+})
 
-  const { data } = useQuery({
-    queryKey: ['get-reviews', id],
-    queryFn: endPoint,
-  })
-
-  return {data}
- 
-}
-export const usePostReview = () => {
-  const { mutate } = useMutation({mutationFn: mutateReview, onSuccess: () => {
-    queryClient.refetchQueries({queryKey: ['get-reviews']})
-  }})
-
-  async function mutateReview(data: {movieId: string, nota: number}) {
-    postReview({idReviewable: data.movieId, rating: data.nota})
-  }
-
-  return {mutate}
-}
-
+export const usePostReview = (id: string) => useMutation({
+  mutationFn: ({ movieId, rating }: { movieId: string; rating: number }) => postReview({ idReviewable: movieId, rating }),
+  onSuccess:  () => queryClient.refetchQueries({ queryKey: ['get-reviews', id] })
+})
