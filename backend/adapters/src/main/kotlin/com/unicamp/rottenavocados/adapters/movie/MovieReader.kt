@@ -35,12 +35,11 @@ class MovieReader(): FileReader {
                     val title = movieElement.getElementsByTagName("Title").item(0).textContent
                     val duration = movieElement.getElementsByTagName("Duration").item(0).textContent.toInt()
                     val synopsis = movieElement.getElementsByTagName("Synopsis").item(0).textContent
-                    val rating = movieElement.getElementsByTagName("Rating").item(0).textContent.toFloatOrNull()
-                    val totalRatings = movieElement.getElementsByTagName("TotalRatings").item(0).textContent.toInt()
+                    val url = movieElement.getElementsByTagName("PosterUrl").item(0).textContent
                     val releaseDate = LocalDate.parse(movieElement.getElementsByTagName("ReleaseDate").item(0).textContent)
                     val genre = Genre.valueOf(movieElement.getElementsByTagName("Genre").item(0).textContent.uppercase())
 
-                    val movie = Movie(duration, id, title, synopsis, rating, totalRatings, releaseDate, genre)
+                    val movie = Movie(duration, id, title, synopsis, releaseDate, url, genre)
                     movies.add(movie)
                 }
             }

@@ -10,11 +10,10 @@ open class Movie (
     override val id: UUID? = null,
     override val title: String,
     override val synopsys: String,
-    override val rating: Float? = null,
-    override val totalRatings: Int = 0,
     override val releaseDate: LocalDate,
+    override val posterUrl: String,
     override val genre: Genre
-) : Reviewable(id, title, synopsys, rating, totalRatings, releaseDate, genre) {
+) : Reviewable(id, title, synopsys, posterUrl, releaseDate, genre) {
     override fun receiveRating(rate: Float) {
         TODO("Not yet implemented")
     }
