@@ -34,7 +34,7 @@ export const Container = styled.div<ContainerProps>`
   
   p {
     background: rgba(0,0,0, 0.7);
-    font-size: 24px;
+    font-size: 18px;
     color:#fff;
     font-weight: 700;
   }
