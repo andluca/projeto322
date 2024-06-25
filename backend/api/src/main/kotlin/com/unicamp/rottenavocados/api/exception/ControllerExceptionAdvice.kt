@@ -1,5 +1,6 @@
 package com.unicamp.rottenavocados.api.exception
 
+import com.ifood.adapters.database.exception.NotFoundException
 import com.unicamp.rottenavocados.datasource.exception.DataAccessException
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
@@ -17,6 +18,14 @@ class ControllerExceptionAdvice {
     @ExceptionHandler(value = [IllegalArgumentException::class])
     fun handleBadRequestException(ex: IllegalArgumentException, request: WebRequest) =
         handleException(ex.localizedMessage, HttpStatus.BAD_REQUEST)
+
+    @ExceptionHandler(value = [NotFoundException::class])
+    fun handleNotFoundException(ex: NotFoundException, request: WebRequest) =
+        handleException(ex.localizedMessage, HttpStatus.NOT_FOUND)
+
+    @ExceptionHandler(value = [Exception::class])
+    fun handleException(ex: Exception, request: WebRequest) =
+        handleException(ex.localizedMessage, HttpStatus.INTERNAL_SERVER_ERROR)
 
     private fun handleException(
         description: String,

@@ -1,6 +1,5 @@
 package com.unicamp.rottenavocados.core.model.review
 
-import java.time.LocalDate
 import java.util.UUID
 
 data class Review (

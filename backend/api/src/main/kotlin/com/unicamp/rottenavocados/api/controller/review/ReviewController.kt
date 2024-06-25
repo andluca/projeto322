@@ -28,11 +28,7 @@ class ReviewController(
         // if authentication was implemented here we should validate the user in some way
         // then we could create a common user or a critic user based on the authentication
         // this is just a mock user, every review will be made like a common user
-        val user: User = CommonUser(UUID.randomUUID(), "default_user")
-        
-        val ratedReview = user.rate(review)
-
-        return createReviewUsecasePort.execute(ratedReview)
+        return createReviewUsecasePort.execute(review)
     }
 
     @GetMapping("/{movieId}")
