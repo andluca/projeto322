@@ -70,10 +70,14 @@ Herança:
 + A interface gráfica foi feita utilizando React e Typescript. Ela acessa a API feita em kotlin, possibilitando a criação de avaliações e a visualização mais fácil de filmes e avaliações pelo usuário final
 
 ### Design Patterns
-+ Adapter Pattern
++ Port and Adapter Pattern (Arquitetura Hexagonal)
+  + Neste padrão, a aplicação é dividida na parte interna (Aplicação, Domínio) e na parte externa (Portas, Adaptadores). A parte interna da aplicação é isolada do mundo exterior por portas e adaptadores.
 + Factory Pattern
-+ Dependency Injection
+  + O padrão Factory é aplicado no projeto através dos métodos rate nas classes CriticUser e CommonUser. Esses métodos criam e retornam uma nova instância de Review. A lógica de criação da Review é encapsulada dentro do método rate, que é uma característica do padrão Factory. A lógica para calcular a classificação é diferente para CriticUser e CommonUser, demonstrando como o padrão Factory pode ser usado para encapsular a lógica de criação de objetos que têm comportamentos diferentes
++ Dependency Injection (DI)
+  + Uso das anotações @Service e @RestController do Spring, que são usadas para definir beans que o container de DI do Spring pode gerenciar. Por exemplo, em MovieController.kt, o ListMoviesUsecasePort está sendo injetado via construtor.
 + Repository Pattern
+  + Usado para abstrair a camada de dados, tornando a aplicação mais fácil de manter, testar e modular. Por exemplo, MovieRepositoryPort.kt é uma interface que define métodos para acessar filmes, mas sem revelar aos módulos mais externos sua implementação.
 
 ### Tratamento de exceção
 + Tratamento de exceções são feitas, por exemplo, na classe MovieReader, para garantir que erros de leitura de arquivo sejam tratados de forma correta
