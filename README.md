@@ -77,7 +77,7 @@ Herança:
 
 ### Tratamento de exceção
 + Tratamento de exceções são feitas, por exemplo, na classe MovieReader, para garantir que erros de leitura de arquivo sejam tratados de forma correta
-+ A classe ControllerExceptionDevice também auxilia a garantir que erros sejam tratados antes de enviados aos usuários da API
++ A classe ControllerExceptionDevice é responsável por garantir que erros sejam tratados antes de enviados aos usuários da API.
 
 ### Arquivos (gravação e leitura)
 + Dados como Filmes e Avaliações são salvos em arquivos XML pela classe MovieReader e ReviewReader
